@@ -1,0 +1,15 @@
+Logs/
+Reports/
+Snapshots/
+Profiles/
+Resources/sql/*.sql.tmp
+.auditdb/
+/.classpath
+/.metadata
+/.reporttemplates
+/daticaldb.properties
+/daticaldb*.log
+/packager*.log
+*.zip
+.svnignore
+.tfignore

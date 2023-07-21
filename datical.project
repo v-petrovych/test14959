@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dbproject:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dbproject="http://datical.com/db/project/1.0" name="vpetrovych_local_oracle" storedLogicExternal="true" deployThreshold="stopOnError" projectsId="294047b5-56e8-42f1-aed8-698cbef5e8b9" runtimeCredentials="false" multiSchema="false" dbSchemaDefinition="dbDef" schemas="" enableRowCount="disabled" multiCatalog="false" lastEdited="2023-06-06T12:52:31.760157Z">
+  <dbDefs xsi:type="dbproject:OracleDbDef" name="bucket0_1" driver="oracle.jdbc.OracleDriver" hostname="localhost" port="1521" username="jenkinsci" password="cGFzc3dvcmQ=" labels="asdf" dbDefsId="09810e3a-7428-3c55-a50d-e556989799a0" serviceName="bucket_01" enableCompression="false" rowsPerBatch="10000"/>
+  <plans name="default_pipeline" databaseDefs="//@dbDefs[name='bucket0_1']" plansId="6f5cfe64-3e59-3815-b4a1-ac3ded4216b3"/>
+  <changelog href="Changelog/changelog.xml#//@databaseChangeLog"/>
+  <dmcDB xsi:type="dbproject:PostgresqlDbDef" name="datical" driver="org.postgresql.Driver" hostname="localhost" port="5432" username="datical" password="MUY0d2V0ME91ZlRCT284RmxzMHg=" dbDefType="dmcdb" database="datical"/>
+</dbproject:Project>

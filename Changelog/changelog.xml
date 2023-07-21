@@ -1,0 +1,40 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:appdba="http://www.datical.net/xml/ns/appdba" xmlns:datical="http://www.datical.net/xml/ns/datical" xmlns:storedlogic="http://www.datical.net/xml/ns/storedlogic" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" datical:lastEdited="2023-03-28T11:24:28.718Z" logicalFilePath="Changelog/changelog.xml" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <changeSet author="vpetrovych" created="Wed Mar 15 15:10:33 EET 2023" id="1">
+        <createTable tableName="first_project">
+            <column defaultValue="0" name="COLUMN1" type="INT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="COLUMN2" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="vpetrovych" created="Wed Mar 15 15:10:33 EET 2023" id="2">
+        <createTable tableName="first_project_2nd">
+            <column defaultValue="0" name="COLUMN1" type="INT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="COLUMN2" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="vpetrovych" created="Thu Mar 16 13:58:55 EET 2023" id="7">
+        <addColumn tableName="first_project">
+            <column defaultValue="default" name="newCol" type="TEXT">
+                <constraints/>
+            </column>
+        </addColumn>
+    </changeSet>
+    <changeSet author="vpetrovych" created="Mon Mar 27 12:28:30 EEST 2023" id="3" runOnChange="true">
+        <createView fullDefinition="true" path="view/first_project_view.sql" viewName="first_project_view"/>
+    </changeSet>
+    <changeSet author="vpetrovych" created="Tue Mar 28 13:41:15 EEST 2023" id="4">
+        <createProcedure path="procedure/insert_in_first_project.sql" procedureName="insert_in_first_project"/>
+    </changeSet>
+        <changeSet author="vpetrovych" created="Wed Mar 15 15:10:33 EET 2023" id="8">
+        <createTable tableName="table_with_number_8">
+            <column defaultValue="0" name="COLUMN1" type="INT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="COLUMN2" type="TEXT"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
